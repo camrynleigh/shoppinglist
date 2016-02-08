@@ -1,0 +1,35 @@
+body {
+    background-image: url("https://gigaom.com/wp-content/uploads/sites/1/2013/10/shutterstock_121014058-1500x1283.jpg");
+    background-size: cover;
+}
+
+#button {
+    height: 24px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    position: static;
+}
+
+.list {
+    border: 5px solid lightgrey;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: -23px;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    position: static;
+    margin: 320px;
+}
+
+li {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.takeAway {
+    color: red;
+}

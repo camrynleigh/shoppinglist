@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shopping">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <title>Shopping List</title>
+</head>
+
+<body ng-controller="MainController">
+
+
+
+    <div class="center-block">
+        <div class="row col-md-12">
+            <input class="list" ng-model="newItem">
+
+            <button id="button" ng-click="addNewItem()">Add</button>
+        </div>
+
+        <div class="row col-md-12">
+            <ul>
+                <li ng-repeat="item in shoppingList track by $index">{{item}}
+
+                    <button class="takeAway" ng-click="removeItem($index)">X</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
